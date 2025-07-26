@@ -1,0 +1,64 @@
+.container {
+    max-width: 500px;
+    margin: auto;
+    padding: 1rem;
+}
+
+.guess-input {
+    margin-bottom: 1rem;
+}
+
+.button-row {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1rem;
+}
+
+.result {
+    font-size: 1.1rem;
+    font-weight: bold;
+    text-align: center;
+    padding: 0.5rem;
+    border-radius: 5px;
+    margin-bottom: 1rem;
+}
+
+.result.low {
+    color: #d35400;
+    background-color: #fdebd0;
+}
+
+.result.high {
+    color: #2980b9;
+    background-color: #d6eaf8;
+}
+
+.result.success {
+    color: #27ae60;
+    background-color: #d4efdf;
+}
+
+.result.error {
+    color: #c0392b;
+    background-color: #f9ebea;
+}
+
+.result.neutral {
+    color: #555;
+    background-color: #f4f6f7;
+}
+
+.history {
+    background: #f8f9f9;
+    border-radius: 6px;
+    padding: 0.5rem;
+}
+
+.history h3 {
+    margin: 0 0 0.5rem 0;
+    text-align: center;
+}
+
+.history ul {
+    padding-left: 1.2rem;
+}
