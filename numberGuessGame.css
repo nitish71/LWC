@@ -1,0 +1,10 @@
+.game-container {
+    max-width: 400px;
+    margin: auto;
+    text-align: center;
+}
+
+.result {
+    font-size: 1rem;
+    font-weight: bold;
+}
