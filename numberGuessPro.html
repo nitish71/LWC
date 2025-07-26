@@ -1,0 +1,44 @@
+<template>
+    <lightning-card title="🎯 Number Guessing Game – Pro Edition" icon-name="custom:custom14">
+        <div class="container">
+            <lightning-input
+                class="guess-input"
+                type="number"
+                label="Your Guess (1 - 100)"
+                value={userGuess}
+                onchange={handleInput}
+                placeholder="Enter a number">
+            </lightning-input>
+
+            <div class="button-row">
+                <lightning-button
+                    variant="brand"
+                    label="Guess"
+                    onclick={checkGuess}
+                    class="slds-m-right_small">
+                </lightning-button>
+                <lightning-button
+                    variant="neutral"
+                    label="Reset"
+                    onclick={resetGame}>
+                </lightning-button>
+            </div>
+
+            <div class="result {resultClass}">
+                {message}
+            </div>
+
+            <template if:true={guessHistory.length}>
+                <div class="history">
+                    <h3>Previous Guesses:</h3>
+                    <ul>
+                        <template for:each={guessHistory} for:item="guess">
+                            <li key={guess.id}>🔢 Attempt: {guess.value}</li>
+                        </template>
+                    </ul>
+                </div>
+            </template>
+            
+        </div>
+    </lightning-card>
+</template>
