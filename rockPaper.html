@@ -1,0 +1,22 @@
+<template>
+    <lightning-card title="✊ Rock, Paper, Scissors" icon-name="utility:game">
+        <div class="game-container">
+            <div class="choices">
+                <lightning-button label="✊ Rock" onclick={playRock}></lightning-button>
+                <lightning-button label="✋ Paper" onclick={playPaper}></lightning-button>
+                <lightning-button label="✌ Scissors" onclick={playScissors}></lightning-button>
+            </div>
+
+            <div class="result-box">
+                <p><strong>You:</strong> {playerChoice}</p>
+                <p><strong>Computer:</strong> {computerChoice}</p>
+                <p class={resultClass}>{resultMessage}</p>
+            </div>
+
+            <div class="score-board">
+                <p>🎯 <strong>Your Score:</strong> {playerScore}</p>
+                <p>💻 <strong>Computer Score:</strong> {computerScore}</p>
+            </div>
+        </div>
+    </lightning-card>
+</template>
