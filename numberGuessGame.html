@@ -1,0 +1,22 @@
+<template>
+    <lightning-card title="🎯 Number Guessing Game" icon-name="custom:custom14">
+        <div class="slds-p-around_medium game-container">
+            <lightning-input
+                type="number"
+                label="Enter your guess (1-100)"
+                value={userGuess}
+                onchange={handleInput}>
+            </lightning-input>
+
+            <lightning-button
+                variant="brand"
+                label="Guess"
+                title="Guess the number"
+                onclick={checkGuess}
+                class="slds-m-top_small">
+            </lightning-button>
+
+            <p class="slds-m-top_medium result">{message}</p>
+        </div>
+    </lightning-card>
+</template>
