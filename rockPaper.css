@@ -1,0 +1,40 @@
+.game-container {
+    text-align: center;
+    padding: 1rem;
+}
+
+.choices lightning-button {
+    margin: 0.5rem;
+    font-size: 1.2rem;
+}
+
+.result-box {
+    margin-top: 1.5rem;
+    font-size: 1.1rem;
+    font-weight: bold;
+}
+
+.result-box p {
+    margin: 0.4rem;
+}
+
+.score-board {
+    margin-top: 1rem;
+    font-size: 1rem;
+}
+
+.win {
+    color: #2ecc71;
+}
+
+.lose {
+    color: #e74c3c;
+}
+
+.draw {
+    color: #f1c40f;
+}
+
+.neutral {
+    color: #7f8c8d;
+}
